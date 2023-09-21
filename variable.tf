@@ -50,3 +50,13 @@ variable "ssh_location" {
   type        = string
 
 }
+
+ #rds variables
+variable "database_instance_class" {
+  default     = "db.ts.micro"
+  description = "the database instance typw"
+  type        = string
+}
+
+
+
