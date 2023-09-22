@@ -54,7 +54,15 @@ variable "ssh_location" {
  #rds variables
 variable "database_instance_class" {
   default     = "db.ts.micro"
-  description = "the database instance typw"
+  description = "the database instance type"
+  type        = string
+}
+
+# aalb variable
+
+variable "ssl_certificate_arn" {
+  default     = "arn:aws:acm:us-east-1:535605067991:certificate/789b8295-63a8-4fd3-98b6-688a9edfad4b"
+  description = "ssl certificate arn"
   type        = string
 }
 
