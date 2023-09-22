@@ -67,4 +67,9 @@ variable "ssl_certificate_arn" {
 }
 
 
-
+# sns topic variable
+variable "operator_email" {
+  default     = "frank.takang@yahoo.ca"
+  description = "a valid email address"
+  type        = string
+}
